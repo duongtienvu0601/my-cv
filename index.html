@@ -4,9 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #79DCF2, #B1A7F2, #F26B6B, #F2CEA2);
+            background-size: 300% 300%;
+            animation: gradientBG 8s infinite alternate;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: left; }
+            100% { background-position: right; }
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cv-container {
+            width: 80%;
+            height: 90%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+            border: none;
+        }
+    </style>
 </head>
 <body>
     <h1>My CV</h1>
-    <iframe src="CV_DuongTienVu_Web_Designer.pdf" width="100%" height="800px"></iframe>
+    <div class="cv-container">
+        <iframe src="CV_DuongTienVu_Web_Designer.pdf"></iframe>
+    </div>
 </body>
 </html>
