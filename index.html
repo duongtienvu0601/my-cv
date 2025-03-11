@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="LogoVD.png">
     <title>My CV</title>
     <style>
         * {
@@ -107,10 +108,27 @@
                 font-size: 12px;
             }
         }
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.site-logo {
+    height: 50px; /* Điều chỉnh kích thước */
+    width: auto;
+}
 
     </style>
 </head>
 <body>
+<header>
+    <img src="LogoVD.png" alt="Logo" class="site-logo">
+</header>
     <h1>My CV</h1>
     <div class="cv-container">
         <iframe src="CV_DuongTienVu_Web_Designer.pdf"></iframe>
